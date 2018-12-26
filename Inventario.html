@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inventario</title>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS  ademas hago un llamado a las libreria de materialize solo para css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+    <style>
+                #fila1 {
+            position: relative;
+            top: 50px;
+        }
+        /* Style the header with a grey background and some padding */
+        
+        .header {
+            overflow: hidden;
+            background-color: #b71c1c;
+            padding: 10px 10px;
+        }
+        /* Style the header links */
+        
+        .header a {
+            position: relative;
+            right: 50px;
+            float: left;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+        
+        .header a.active {
+            background-color:#f1f1f1 /*#b71c1c*/;
+            color: white;
+        }
+        /* Float the link section to the right */
+        
+        .header-right {
+            float: right;
+        }
+        /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+        
+        .header-left {
+            position: relative;
+            left: 50px;
+            float: left;
+        }
+        
+        @media screen and (max-width: 700px) {
+            .header-left {
+                position: relative;
+                left: 10px;
+                float: none;
+            }
+            .header-right {
+                position: relative;
+                left: 50px;
+                float: left;
+            }
+        }
+    </style>
+    <div class="header">
+        <div class="header-left">
+            <h5 class="white-text">Bienvenido:</h5>
+        </div>
+        <div class="header-right">
+            <a class="active waves-effect waves-block waves-light red-text text-red darken-4" href="loginUsuario.html">Cerrar sesión</a>
+        </div>
+    </div>
+    </style>
+    <div class="container ">
+        <div class="row">
+            <div class="input-field col s12 m6 l6">
+                <i class="material-icons prefix">search</i>
+                <input type="text" >
+                <label for="buscar">Buscar Producto:</label>
+            </div>
+            <div class="input-field col s12 m6 l6">
+                   <select multiple>
+                        <option value="" disabled selected>Tipo producto: </option>
+                        <option value="1">Harinas</option>
+                        <option value="2">Verduras</option>
+                        <option value="3">Legumbres</option>
+                        <option value="4">Granos</option>
+                        <option value="5">Carnes</option>
+                        <option value="6">Vinos</option>
+                        <option value="7">Jugos</option>
+                        <option value="8">Gaseosas-Cervezas</option>
+                    </select>
+                </div>
+        </div>
+        <div class="row">
+            
+            <div class="col s12  l12">
+                <!--aca va la tabla del inventario-->
+                <table class=" centered responsive-table highlight">
+                        <thead>
+                          <tr>
+                            <th>Codigo</th>
+                            <th>Nombre Producto</th>
+                            <th>Tipo Producto</th>
+                            <th>Valor Compra</th>
+                            <th>Cantidad</th>
+
+                          </tr>
+                        </thead>
+                
+                        <tbody>
+                          <tr>
+                              <!--filas-->
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                          </tr>
+                          <tr>
+                                
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                              
+                          </tr>
+
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+
+                           <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+
+                           <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+
+                        </tbody>
+                      </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <button class="btn red darken-4">
+                    <i class="material-icons left">delete</i> Eliminar</button>
+            </div>
+            <div class="col s4">
+                <button class="btn red darken-4">
+                    <i class="material-icons left">add</i> Agregar</button>
+            </div>
+            <div class="col s4">
+                <button class="btn red darken-4" id="boton">
+                    <i class="material-icons left">home</i>Menu</button>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+  });
+        
+    </script>
+     <script src="inventario.js"></script>
+</body>
+</html>
