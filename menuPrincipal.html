@@ -20,68 +20,21 @@
             background: #b71c1c;/*rgb(17, 14, 68);*/
         }
         
-        #fila1 {
-            position: relative;
-            top: 50px;
-        }
-        /* Style the header with a grey background and some padding */
-        
-        .header {
-            overflow: hidden;
-            background-color: #f1f1f1;
-            padding: 10px 10px;
-        }
-        /* Style the header links */
-        
-        .header a {
-            position: relative;
-            right: 50px;
-            float: left;
-            text-align: center;
-            padding: 15px;
-            font-size: 20px;
-            line-height: 25px;
-            border-radius: 4px;
-        }
-        
-        .header a.active {
-            background-color: #b71c1c;
-            color: white;
-        }
-        /* Float the link section to the right */
-        
-        .header-right {
-            float: right;
-        }
-        /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-        
-        .header-left {
-            position: relative;
-            left: 50px;
-            float: left;
-        }
-        
-        @media screen and (max-width: 700px) {
-            .header-left {
-                position: relative;
-                left: 10px;
-                float: none;
-            }
-            .header-right {
-                position: relative;
-                left: 50px;
-                float: left;
-            }
-        }
     </style>
-    <div class="header">
-        <div class="header-left">
-            <h5>Bienvenido:</h5>
-        </div>
-        <div class="header-right">
-            <a class="active waves-effect waves-block waves-light" href="loginUsuario.html">Cerrar sesión</a>
-        </div>
+   <div class="navbar-fixed">
+        <nav class="grey lighten-3">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo left red-text text-darken-4">Doña Magola</a>
+                <ul class="right hide-on "><li><a class="red-text text-darken-4"href="menuPrincipal.html">CERRAR SESIÓN</a></li>
+
+
+            </div>
+
+        </nav>
     </div>
+    <div class="row"></div>
+    <div class="row"></div>
+
     <div class="container section">
         <div id="fila1" class="row">
             <div class="col s12 m6 l4 xl4">
