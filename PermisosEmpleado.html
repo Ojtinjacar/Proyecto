@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Permisos</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS  ademas hago un llamado a las libreria de materialize solo para css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+    <style>
+        #Imagen{
+                    width: 150px;
+                    height: 150px;
+                }
+        body{
+                background:#e0e0e0;
+            }
+        .datepicker-table td.is-selected{
+            background-color:#b71c1c;
+            color:#fff
+        }
+        .datepicker-done{
+            color:#b71c1c;
+            padding:0 1rem
+            } 
+         .datepicker-date-display{
+            background-color:#b71c1c;
+        }
+        .datepicker-table td.is-today{
+            color:#b71c1c;
+   
+        }
+        .datepicker-cancel{
+            color:#b71c1c;
+            padding:0 1rem
+            } 
+            p{
+         line-height: 0.5;
+        }   
+        
+            </style>
+
+
+    <div class="navbar-fixed">
+        <nav class="red darken-4">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo left ">Ver Horarios</a>
+                <ul class="right hide-on-med-and-down ">
+                    <li><a href="menuPrincipal.html">MENÚ PRINCIPAL</a></li>
+                    <li><a href="Horario.html">HORARIOS</a></li>
+                    <li><a href="loginUsuario.html">CERRAR SESIÓN</a></li>
+                </ul>
+
+
+            </div>
+
+        </nav>
+    </div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col s4">
+            <div class="row"></div>
+            <div class="center">
+                <img class="responsive-img circle " id="Imagen" src="Imagen.jpg">
+                <div class="row"></div>
+
+            </div>
+            <div class="center">
+                <div class="row"></div>
+                <h4>1 233 893 557</h4>
+                <div class="row"></div>
+                <h4>Oscar Julián Tinjacá</h4>
+                <div class="row"></div>
+
+                <h4>Cajero</h4>
+                <div class="row"></div>
+
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="input-field">
+                <i class="material-icons prefix">date_range</i>
+                <input type="text" class="datepicker" id="fecha">
+                <label for="fecha">Fecha</label>
+            </div>
+            <div class="row"></div>
+            <div class="input-field">
+                <i class="material-icons prefix">hourglass_empty</i>
+                <input id="icon_prefix" type="text" class="timepicker">
+                <label for="icon_prefix">Hora Inicial</label>
+            </div>
+            <div class="row"></div>
+            <div class="input-field">
+                <i class="material-icons prefix">hourglass_full</i>
+                <input id="icon_telephone" type="text" class="timepicker">
+                <label for="icon_telephone">Hora Final</label>
+            </div>
+            <div class="row"></div>
+            <div class="input-field">
+                    <i class="material-icons prefix">feedback</i>
+                    <input id="Motivo" type="text" class="timepicker">
+                    <label for="Motivo">Motivo</label>
+                </div>
+        </div>
+        </form>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <!--script type="text/javascript" src="js/materialize.min.js"></script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="PermisosEmpleados.js"></script>
+
+
+
+</body>
+
+
+</html>
